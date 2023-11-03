@@ -5,8 +5,8 @@
   -->
 <launch>
 
-    <!-- <arg name="input_topic" default="/hesai/pandar"/> -->
-    <arg name="input_topic" default="/sensing/velodyne_lower/velodyne_points"/>
+    <arg name="input_topic" default="/hesai/pandar"/>
+    <!-- <arg name="input_topic" default="/sensing/velodyne_lower/velodyne_points"/> -->
 
     <node pkg="nodelet" type="nodelet" name="heightmap_nodelet"
         args="load velodyne_height_map/HeightMapNodelet velodyne_nodelet_manager">
